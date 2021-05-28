@@ -29,7 +29,7 @@ public class QuestForUserInput {
         // When we get to our double data type, we can use Scanner's nextDouble method
         // or we can use the Double.parseDouble to convert the nextLine's String
 
-        System.out.println("What is the airspeed velocity of an unladen swallow?!?! ");
+        System.out.print("What is the airspeed velocity of an unladen swallow?!?! ");
         velocityOfSwallow = Double.parseDouble(inputReader.nextLine());
         System.out.println();
         System.out.println("How do you know " + velocityOfSwallow + " is correct, " + yourName + "?");
