@@ -11,15 +11,16 @@ package com.rose.foundations.variables;
  */
 public class BestAdderEver {
     public static void main(String[] args) {
-        //Declare variables
+        //Declare Sum
+        int sum;
         int men, women;
         int babies, family;
         men = 4;
         women = 7;
         babies = 12;
-        family = men + women + babies;
+        sum = men + women + babies;
         
-        System.out.println(men + ("+") + women + ("+") + babies + ("=")+ family);
+        System.out.println(men + ("+") + women + ("+") + babies + ("=")+ sum);
                 
     }
 }
