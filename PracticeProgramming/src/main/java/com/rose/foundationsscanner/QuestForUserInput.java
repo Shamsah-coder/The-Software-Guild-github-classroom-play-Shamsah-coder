@@ -21,15 +21,15 @@ public class QuestForUserInput {
 
         // We can use the Scanner's readLine to assign value to our strings
         // because its return type is string
-        System.out.println("What is your name?? ");
+        System.out.println("What is your name??");
         yourName = inputReader.nextLine();
 
-        System.out.println("What is your quest?! ");
+        System.out.println("What is your quest?!");
         yourQuest = inputReader.nextLine();
         // When we get to our double data type, we can use Scanner's nextDouble method
         // or we can use the Double.parseDouble to convert the nextLine's String
 
-        System.out.print("What is the airspeed velocity of an unladen swallow?!?! ");
+        System.out.println("What is the airspeed velocity of an unladen swallow?!?! ");
         velocityOfSwallow = Double.parseDouble(inputReader.nextLine());
         System.out.println();
         System.out.println("How do you know " + velocityOfSwallow + " is correct, " + yourName + "?");
