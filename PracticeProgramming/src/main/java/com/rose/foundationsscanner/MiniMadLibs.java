@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class MiniMadLibs {
     public static void main(String[] args) {
         //declare variables
-        int number;
+        int number, number2;
         String noun, secondNoun, adjective, secondAdjective, pluralNoun, secondPlural;
         String thirdPlural, verb, pastParticiple;
         
@@ -33,9 +33,14 @@ public class MiniMadLibs {
         System.out.println("Another noun: ");
         secondNoun = inputReader.nextLine();
         
-        // Use parsing for Integers
+        // Use parsing for Integers, alternatively, you can add inputReader.nextLine
         System.out.println("Add a number: ");
-        number = Integer.parseInt(inputReader.nextLine());
+        number = inputReader.nextInt();
+        inputReader.nextLine();
+        
+        //Use of parsing for integers to get input and move to next line, a string
+        System.out.println("Use another number");
+        number2 = Integer.parseInt(inputReader.nextLine());
         
         System.out.println("Another adjective: ");
         secondAdjective = inputReader.nextLine();
