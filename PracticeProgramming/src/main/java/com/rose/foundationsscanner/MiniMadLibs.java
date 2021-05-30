@@ -13,11 +13,16 @@ import java.util.Scanner;
  */
 public class MiniMadLibs {
     public static void main(String[] args) {
+        //declare variables
         int number;
         String noun, secondNoun, adjective, secondAdjective, pluralNoun, secondPlural;
         String thirdPlural, verb, pastParticiple;
         
+         //Import scanner
         Scanner inputReader = new Scanner (System.in);
+        
+        //Ask reader for appropriate nouns, adjectives and verbs.
+        //Make sure to initialize the string  and readers input so the system stores it.
         
         System.out.println("I need a noun: ");
         noun = inputReader.nextLine();
@@ -28,6 +33,7 @@ public class MiniMadLibs {
         System.out.println("Another noun: ");
         secondNoun = inputReader.nextLine();
         
+        // Use parsing for Integers
         System.out.println("Add a number: ");
         number = Integer.parseInt(inputReader.nextLine());
         
@@ -52,6 +58,8 @@ public class MiniMadLibs {
         System.out.println("*****Now Let's Get Mad (libs)*****");
         
         System.out.println("");
+        
+        // Print out paragraphs using the strings and + sign, use spaces between "" for proper spacing.
         
         System.out.println(noun + "" + ": The " + adjective + "" + ". These are the vogages" );
         System.out.println("of the starship " + secondNoun + "" + " Its " + number + "" + " - year mission: to  ");
