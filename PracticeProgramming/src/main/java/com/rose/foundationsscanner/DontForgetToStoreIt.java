@@ -30,12 +30,12 @@ public class DontForgetToStoreIt {
         Integer.parseInt(inputReader.nextLine());
 
         System.out.println("What is your favorite kind of cheese? ");
-        inputReader.nextLine();
+        cheese = inputReader.nextLine();
 
         System.out.println("Do you like the color red or blue more? ");
-        inputReader.nextLine();
+        color = inputReader.nextLine();
 
-       // System.out.println("Ooh, " + color + " " + cheese + " sounds delicious!");
+        System.out.println("Ooh, " + color + " " + cheese + " sounds delicious!");
         System.out.println("The circumference of life is " +( 2 * pi * meaningOfLifeAndEverything));
     }
     
