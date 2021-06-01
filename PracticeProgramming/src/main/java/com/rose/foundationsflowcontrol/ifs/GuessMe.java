@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.rose.foundationsflowcontrol.ifs;
+package com.rose.foundationsflowcontrol.ifs;
 
 import java.util.Scanner;
 
