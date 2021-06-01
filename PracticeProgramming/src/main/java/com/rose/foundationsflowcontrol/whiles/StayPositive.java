@@ -5,6 +5,8 @@
  */
 package com.rose.foundationsflowcontrol.whiles;
 
+import java.util.Scanner;
+
 /**
  *
  * @author User
@@ -12,17 +14,33 @@ package com.rose.foundationsflowcontrol.whiles;
 public class StayPositive {
     public static void main(String[] args) {
         
+        Scanner userInput = new Scanner(System.in);
+        
         int minNum = 0;
-        int maxNum = 10;
+        int maxNum;
         
-        while (maxNum > minNum){
-            System.out.println(maxNum);
-            //count down, don't forget to open and close block with curly brackets {
-            
+        System.out.println("Choose a number from 1 to 30 to countdown from: ");
+        maxNum = userInput.nextInt();
+        System.out.println("Here goes...");
+        
+        while (maxNum > (minNum + 20) ){
+            System.out.print(maxNum + ",");
+        //count down, don't forget to open and close block with curly brackets {
+        maxNum--;}
+        //separate line
+        System.out.println("");
+        
+        while ((maxNum) > (minNum + 10)) {
+            System.out.print((maxNum) + ",");
             maxNum--;}
+        System.out.println("");
         
+        while (maxNum > minNum) {
+            System.out.print( maxNum + ",");
+            maxNum--;}
+        System.out.println("");
         
-        System.out.println("Blast Off!");
+     System.out.println(" Blast Off!");
     }
-    
+   
 }
