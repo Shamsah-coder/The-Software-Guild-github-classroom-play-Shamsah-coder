@@ -18,7 +18,7 @@ public class GuessMeMore {
         Random rng = new Random();
         
         int operator = 75;
-        int choice = -100+rng.nextInt(100- (-100));
+        int choice = -100+rng.nextInt(100- (-100)+1);
         
         System.out.println("I've chosen a number between -100 and 100. Betcha can't guess it! Guess:" + choice);
         
