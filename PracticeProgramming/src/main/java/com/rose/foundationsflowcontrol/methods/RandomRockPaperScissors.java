@@ -16,7 +16,7 @@ public class RandomRockPaperScissors {
       Random range = new Random();
      
         String choices [] = {"Rock", "Paper", "Scissors"};
-        System.out.println(("My choice is: ")+ choices[new Random().nextInt(choices.length)]);        
+        System.out.println(("My choice is: ")+ choices[range.nextInt(choices.length)]);        
    
 }
 } 

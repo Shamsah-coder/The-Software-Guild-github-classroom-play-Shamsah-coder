@@ -18,10 +18,10 @@ public class BarelyControlledChaos {
         String color = getColor();
         String animal = getAnimal();
         String colorAgain = getColor();
-        int weight = getRandomInt(5, 200);
-        int distance = getRandomInt(10, 20);
-        int number = getRandomInt(10000, 20000);
-        int time = getRandomInt(2, 6);
+        int weight = getRandomInt(200, 5);
+        int distance = getRandomInt(20, 10);
+        int number = getRandomInt(20000, 10000);
+        int time = getRandomInt(6, 2);
         System.out.println("Once, when I was very small...");
         System.out.println("I was chased by a " + color + ", " + weight + "lb" +
                 " miniature " + animal + " for over " + distance + " miles!!");
@@ -41,7 +41,7 @@ public class BarelyControlledChaos {
         String[] animalArray = {"zebra", "chimpanzee", "blowfish", "lemur", "hyena"};
         return animalArray[randomChoice.nextInt(animalArray.length)];
     }
-    static int getRandomInt(int Min, int Max) {
+    static int getRandomInt(int Max, int Min) {
         Random randomNumber = new Random();
         int num = randomNumber.nextInt(Max - Min) + Min;
         return num;
